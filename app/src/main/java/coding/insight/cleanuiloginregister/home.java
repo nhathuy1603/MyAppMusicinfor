@@ -6,6 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.TableLayout;
+
+import com.google.android.material.tabs.TabItem;
+import com.google.android.material.tabs.TabLayout;
 
 public class home extends AppCompatActivity {
 
@@ -13,8 +17,12 @@ public class home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         LinearLayout linearLayout;
         LinearLayout linearLayout1;
+
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
         linearLayout = (LinearLayout) findViewById(R.id.profile_id);
         linearLayout1 = (LinearLayout) findViewById(R.id.lvnhaccu);
         linearLayout.setOnClickListener(new View.OnClickListener() {
@@ -33,5 +41,6 @@ public class home extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }
